@@ -15,4 +15,4 @@ class SmokeTest(TestCase):
         html = response.content.decode('utf8')
         self.assertTrue(html.startswith('<html>'))
         self.assertIn('<title>To-Do lists</title>', html)
-        self.assertTrue(html.endswith('</hrml>'))
+        self.assertTrue(html.endswith('</html>'))
